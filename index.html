@@ -18,14 +18,65 @@
   <body
     class="h-screen bg-[#BFD7E4] before:absolute before:left-0 before:top-0 before:-z-10 before:h-[46.5rem] before:w-[100%] before:bg-[#293241]"
   >
-    <header class="flex flex-col items-center pt-[10.7rem]">
+    <header class="flex flex-col items-center pb-[3.2rem] pt-[10.7rem]">
       <h1 class="font-staatliches text-[3.6rem]/[4.5rem] text-white">avalie a sua mentoria</h1>
       <p class="mb-[3rem] font-poppins text-[1.6rem]/[2.4rem] text-white">
         Chegou a hora de avaliar o seu mentor. Bora lá?
       </p>
-      <img class="h-[10rem] w-[22.5rem]" src="./src/assets/stars.svg" alt="Balão com 3 de 5 estrelas de avaliação" />
+      
+      <img
+        class="h-[10rem] w-[22.5rem]"
+        src="./src/assets/stars.svg"
+        alt="Balão com classificação de 3 em 5 estrelas"
+      />
     </header>
 
-    <main></main>
+    <main class="flex flex-col items-center">
+      <div class="flex w-[75rem] justify-center rounded-t-[2rem] bg-[#F67669] py-[5rem]">
+        <h1 class="font-staatliches text-[2.4rem]/[3.4rem] text-white">Informações Pessoais</h1>
+      </div>
+
+      <form class="w-[75rem] bg-white px-[6.4rem] pb-[6.4rem] pt-[3.2rem]">
+        <fieldset class="flex flex-col gap-[1.6rem]">
+          <legend class="hidden">Informações Pessoais</legend>
+
+          <div id="name-wrapper" class="flex gap-[2.2rem]">
+            <div id="fist-name-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
+              <label for="first-name" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">Nome</label>
+              <input
+                class="h-[5.5rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+                type="text"
+                id="first-name"
+                name="first-name"
+              />
+            </div>
+
+            <div id="last-name-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
+              <label for="last-name" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">Sobrenome</label>
+              <input
+                class="h-[5.5rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+                type="text"
+                id="last-name"
+                name="last-name"
+              />
+            </div>
+          </div>
+
+          <div id="email-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
+            <label for="email" class="flex gap-[0.9rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">
+              Email <span class="font-poppins text-[1.2rem] text-[#C1BCCC]">(digite um email válido)</span>
+            </label>
+            <input
+              class="h-[5.5rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              type="email"
+              id="email"
+              name="email"
+            />
+          </div>
+          
+        </fieldset>
+      </form>
+      
+    </main>
   </body>
 </html>
