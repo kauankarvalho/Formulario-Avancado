@@ -521,3 +521,103 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+
+.mb-\[3rem\] {
+  margin-bottom: 3rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-\[10rem\] {
+  height: 10rem;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-\[22\.5rem\] {
+  width: 22.5rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.bg-\[\#BFD7E4\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(191 215 228 / var(--tw-bg-opacity));
+}
+
+.pt-\[10\.7rem\] {
+  padding-top: 10.7rem;
+}
+
+.font-poppins {
+  font-family: Poppins, sans-serif;
+}
+
+.font-staatliches {
+  font-family: Staatliches, cursive;
+}
+
+.text-\[1\.6rem\]\/\[2\.4rem\] {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.text-\[3\.6rem\]\/\[4\.5rem\] {
+  font-size: 3.6rem;
+  line-height: 4.5rem;
+}
+
+.text-\[62\.5\%\] {
+  font-size: 62.5%;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.before\:absolute::before {
+  content: var(--tw-content);
+  position: absolute;
+}
+
+.before\:left-0::before {
+  content: var(--tw-content);
+  left: 0px;
+}
+
+.before\:top-0::before {
+  content: var(--tw-content);
+  top: 0px;
+}
+
+.before\:-z-10::before {
+  content: var(--tw-content);
+  z-index: -10;
+}
+
+.before\:h-\[46\.5rem\]::before {
+  content: var(--tw-content);
+  height: 46.5rem;
+}
+
+.before\:w-\[100\%\]::before {
+  content: var(--tw-content);
+  width: 100%;
+}
+
+.before\:bg-\[\#293241\]::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(41 50 65 / var(--tw-bg-opacity));
+}
