@@ -20,10 +20,10 @@
   >
     <header class="flex flex-col items-center pb-[3.2rem] pt-[10.7rem]">
       <h1 class="font-staatliches text-[3.6rem]/[4.5rem] text-white">avalie a sua mentoria</h1>
-      <p class="mb-[3rem] font-poppins text-[1.6rem]/[2.4rem] text-white">
+      <p class="mb-[2.3rem] font-poppins text-[1.6rem]/[2.4rem] text-white">
         Chegou a hora de avaliar o seu mentor. Bora lá?
       </p>
-      
+
       <img
         class="h-[10rem] w-[22.5rem]"
         src="./src/assets/stars.svg"
@@ -36,7 +36,7 @@
         <h1 class="font-staatliches text-[2.4rem]/[3.4rem] text-white">Informações Pessoais</h1>
       </div>
 
-      <form class="w-[75rem] bg-white px-[6.4rem] pb-[6.4rem] pt-[3.2rem]">
+      <form class="flex w-[75rem] flex-col gap-[3.2rem] bg-white px-[6.4rem] pb-[6.4rem] pt-[3.2rem]">
         <fieldset class="flex flex-col gap-[1.6rem]">
           <legend class="hidden">Informações Pessoais</legend>
 
@@ -73,7 +73,53 @@
               name="email"
             />
           </div>
-          
+        </fieldset>
+
+        <fieldset class="flex flex-col gap-[1.6rem]">
+          <legend
+            class="w-[100%] border-b-[0.1rem] border-[#E6E6F0] pb-[0.8rem] text-center font-staatliches text-[2.4rem]/[3.4rem] text-[#253B51]"
+          >
+            Informações do mentor
+          </legend>
+
+          <div id="mentor-wrapper" class="mt-[3.2rem] flex w-[100%] flex-col gap-[0.8rem]">
+            <label for="mentor" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">
+              Selecione quem foi o seu mentor
+            </label>
+            <select
+              class="h-[5.5rem] max-w-[30rem] cursor-pointer appearance-none rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] bg-[url(../src/assets/select.svg)] bg-[right_1.4rem_top_50%] bg-no-repeat px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              name="mentor"
+              id="mentor"
+            >
+              <option value="" disabled selected>Mentor</option>
+              <option value="mayk-brito">Mayk Brito</option>
+              <option value="rodrigo-gonçalves">Rodrigo Gonçalves</option>
+              <option value="diego-fernandes">Diego Fernandes</option>
+            </select>
+          </div>
+
+          <div id="feedback-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
+            <label for="feedback" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">
+              Feedback sobre o mentor
+            </label>
+            <textarea
+              name="feedback"
+              id="feedback"
+              class="h-[16.5rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] p-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+            ></textarea>
+          </div>
+
+          <div id="checkbox-wrapper" class="flex gap-[0.8rem]">
+            <input
+              class="h-[2.4rem] w-[2.4rem] cursor-pointer appearance-none rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] checked:bg-[url(../src/assets/check.svg)] checked:bg-center checked:bg-no-repeat"
+              type="checkbox"
+              id="checkbox"
+              name="checkbox"
+            />
+            <label for="checkbox" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">
+              Todas as minhas dúvidas foram esclarecidas durante a mentoria.
+            </label>
+          </div>
         </fieldset>
       </form>
       

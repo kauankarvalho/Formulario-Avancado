@@ -522,8 +522,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mb-\[3rem\] {
-  margin-bottom: 3rem;
+.mb-\[2\.3rem\] {
+  margin-bottom: 2.3rem;
+}
+
+.mt-\[3\.2rem\] {
+  margin-top: 3.2rem;
 }
 
 .flex {
@@ -538,6 +542,14 @@ video {
   height: 10rem;
 }
 
+.h-\[16\.5rem\] {
+  height: 16.5rem;
+}
+
+.h-\[2\.4rem\] {
+  height: 2.4rem;
+}
+
 .h-\[5\.5rem\] {
   height: 5.5rem;
 }
@@ -550,12 +562,30 @@ video {
   width: 100%;
 }
 
+.w-\[2\.4rem\] {
+  width: 2.4rem;
+}
+
 .w-\[22\.5rem\] {
   width: 22.5rem;
 }
 
 .w-\[75rem\] {
   width: 75rem;
+}
+
+.max-w-\[30rem\] {
+  max-width: 30rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.appearance-none {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .flex-col {
@@ -586,6 +616,10 @@ video {
   gap: 2.2rem;
 }
 
+.gap-\[3\.2rem\] {
+  gap: 3.2rem;
+}
+
 .rounded-\[0\.8rem\] {
   border-radius: 0.8rem;
 }
@@ -597,6 +631,10 @@ video {
 
 .border-\[0\.1rem\] {
   border-width: 0.1rem;
+}
+
+.border-b-\[0\.1rem\] {
+  border-bottom-width: 0.1rem;
 }
 
 .border-\[\#E6E6F0\] {
@@ -624,6 +662,22 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[url\(\.\.\/src\/assets\/select\.svg\)\] {
+  background-image: url(../src/assets/select.svg);
+}
+
+.bg-\[right_1\.4rem_top_50\%\] {
+  background-position: right 1.4rem top 50%;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+
+.p-\[1\.5rem\] {
+  padding: 1.5rem;
+}
+
 .px-\[1\.5rem\] {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -637,6 +691,10 @@ video {
 .py-\[5rem\] {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.pb-\[0\.8rem\] {
+  padding-bottom: 0.8rem;
 }
 
 .pb-\[3\.2rem\] {
@@ -653,6 +711,10 @@ video {
 
 .pt-\[3\.2rem\] {
   padding-top: 3.2rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .font-poppins {
@@ -689,6 +751,11 @@ video {
 
 .text-\[62\.5\%\] {
   font-size: 62.5%;
+}
+
+.text-\[\#253B51\] {
+  --tw-text-opacity: 1;
+  color: rgb(37 59 81 / var(--tw-text-opacity));
 }
 
 .text-\[\#4E4958\] {
@@ -745,6 +812,18 @@ video {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(41 50 65 / var(--tw-bg-opacity));
+}
+
+.checked\:bg-\[url\(\.\.\/src\/assets\/check\.svg\)\]:checked {
+  background-image: url(../src/assets/check.svg);
+}
+
+.checked\:bg-center:checked {
+  background-position: center;
+}
+
+.checked\:bg-no-repeat:checked {
+  background-repeat: no-repeat;
 }
 
 .focus\:border-\[0\.2rem\]:focus {
