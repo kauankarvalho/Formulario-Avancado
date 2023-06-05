@@ -36,7 +36,7 @@
         <h1 class="font-staatliches text-[2.4rem]/[3.4rem] text-white">Informações Pessoais</h1>
       </div>
 
-      <form class="flex w-[75rem] flex-col gap-[3.2rem] bg-white px-[6.4rem] pb-[6.4rem] pt-[3.2rem]">
+      <form class="flex w-[75rem] flex-col gap-[3.2rem] rounded-b-[2rem] bg-white px-[6.4rem] pb-[6.4rem] pt-[3.2rem]">
         <fieldset class="flex flex-col gap-[1.6rem]">
           <legend class="hidden">Informações Pessoais</legend>
 
@@ -64,7 +64,7 @@
 
           <div id="email-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
             <label for="email" class="flex gap-[0.9rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">
-              Email <span class="font-poppins text-[1.2rem] text-[#C1BCCC]">(digite um email válido)</span>
+              Email<span class="font-poppins text-[1.2rem] text-[#C1BCCC]">(digite um email válido)</span>
             </label>
             <input
               class="h-[5.5rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
@@ -121,8 +121,57 @@
             </label>
           </div>
         </fieldset>
+
+        <fieldset class="flex gap-[3.2rem]">
+          <legend
+            class="w-[100%] border-b-[0.1rem] border-[#E6E6F0] pb-[0.8rem] text-center font-staatliches text-[2.4rem]/[3.4rem] text-[#253B51]"
+          >
+            Agendando próxima mentoria
+          </legend>
+
+          <div id="date-wrapper" class="w-max-[29rem] mt-[3.2rem] flex w-[100%] flex-col gap-[0.8rem]">
+            <label for="date" class="flex gap-[0.9rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">
+              Data<span class="font-poppins text-[1.2rem] text-[#C1BCCC]">(DD/MM/AAAA)</span>
+            </label>
+            <input
+              class="h-[5.5rem] cursor-text rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              type="date"
+              id="date"
+              name="date"
+            />
+          </div>
+
+          <div id="time-wrapper" class="mt-[3.2rem] flex w-[100%] gap-[1rem]">
+            <div id="time-start-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
+              <label class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]" for=""> Das </label>
+              <input
+                class="h-[5.5rem] cursor-text rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+                type="time"
+                id="time-start"
+                name="time-start"
+              />
+            </div>
+
+            <div id="time-end-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
+              <label class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]" for=""> Das </label>
+              <input
+                class="h-[5.5rem] cursor-text rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+                type="time"
+                id="time-end"
+                name="time-end"
+              />
+            </div>
+          </div>
+        </fieldset>
+
+        <button
+          type="submit"
+          class="mt-[3.2rem] rounded-[0.8rem] bg-[#F67669] p-[1.25rem] font-staatliches text-[2rem]/[2.6rem] text-white"
+        >
+          salvar
+        </button>
       </form>
-      
+
     </main>
   </body>
 </html>
