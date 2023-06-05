@@ -535,6 +535,10 @@ input[type="date"]::-webkit-calendar-picker-indicator,
   margin-bottom: 2.3rem;
 }
 
+.mb-\[5rem\] {
+  margin-bottom: 5rem;
+}
+
 .mt-\[3\.2rem\] {
   margin-top: 3.2rem;
 }
@@ -545,6 +549,10 @@ input[type="date"]::-webkit-calendar-picker-indicator,
 
 .hidden {
   display: none;
+}
+
+.h-\[100\%\] {
+  height: 100%;
 }
 
 .h-\[10rem\] {
@@ -563,10 +571,6 @@ input[type="date"]::-webkit-calendar-picker-indicator,
   height: 5.5rem;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-\[100\%\] {
   width: 100%;
 }
@@ -579,12 +583,16 @@ input[type="date"]::-webkit-calendar-picker-indicator,
   width: 22.5rem;
 }
 
-.w-\[75rem\] {
-  width: 75rem;
+.min-w-\[2\.4rem\] {
+  min-width: 2.4rem;
 }
 
 .max-w-\[30rem\] {
   max-width: 30rem;
+}
+
+.max-w-\[75rem\] {
+  max-width: 75rem;
 }
 
 .cursor-pointer {
@@ -709,6 +717,11 @@ input[type="date"]::-webkit-calendar-picker-indicator,
   padding-right: 1.5rem;
 }
 
+.px-\[5rem\] {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .px-\[6\.4rem\] {
   padding-left: 6.4rem;
   padding-right: 6.4rem;
@@ -809,6 +822,20 @@ input[type="date"]::-webkit-calendar-picker-indicator,
   outline-offset: 2px;
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-\[0\.3s\] {
+  transition-duration: 0.3s;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -857,6 +884,12 @@ input[type="date"]::-webkit-calendar-picker-indicator,
   background-repeat: no-repeat;
 }
 
+.hover\:scale-\[1\.03\]:hover {
+  --tw-scale-x: 1.03;
+  --tw-scale-y: 1.03;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .focus\:border-\[0\.2rem\]:focus {
   border-width: 0.2rem;
 }
@@ -864,4 +897,50 @@ input[type="date"]::-webkit-calendar-picker-indicator,
 .focus\:border-\[\#4E4958\]:focus {
   --tw-border-opacity: 1;
   border-color: rgb(78 73 88 / var(--tw-border-opacity));
+}
+
+@media (max-width: 570px) {
+  .max-\[570px\]\:mt-\[0px\] {
+    margin-top: 0px;
+  }
+
+  .max-\[570px\]\:max-w-\[100\%\] {
+    max-width: 100%;
+  }
+
+  .max-\[570px\]\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-\[570px\]\:items-center {
+    align-items: center;
+  }
+
+  .max-\[570px\]\:gap-\[0rem\] {
+    gap: 0rem;
+  }
+
+  .max-\[570px\]\:text-center {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .max-\[500px\]\:order-2 {
+    order: 2;
+  }
+
+  .max-\[500px\]\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-\[500px\]\:text-center {
+    text-align: center;
+  }
+}
+
+@media (max-width: 420px) {
+  .max-\[420px\]\:flex-col {
+    flex-direction: column;
+  }
 }

@@ -16,7 +16,7 @@
   </head>
 
   <body
-    class="h-screen bg-[#BFD7E4] before:absolute before:left-0 before:top-0 before:-z-10 before:h-[46.5rem] before:w-[100%] before:bg-[#293241]"
+    class="h-[100%] bg-[#BFD7E4] px-[5rem] before:absolute before:left-0 before:top-0 before:-z-10 before:h-[46.5rem] before:w-[100%] before:bg-[#293241]"
   >
     <header class="flex flex-col items-center pb-[3.2rem] pt-[10.7rem]">
       <h1 class="font-staatliches text-[3.6rem]/[4.5rem] text-white">avalie a sua mentoria</h1>
@@ -32,45 +32,57 @@
     </header>
 
     <main class="flex flex-col items-center">
-      <div class="flex w-[75rem] justify-center rounded-t-[2rem] bg-[#F67669] py-[5rem]">
+      <div class="flex w-[100%] max-w-[75rem] justify-center rounded-t-[2rem] bg-[#F67669] py-[5rem]">
         <h1 class="font-staatliches text-[2.4rem]/[3.4rem] text-white">Informações Pessoais</h1>
       </div>
 
-      <form class="flex w-[75rem] flex-col gap-[3.2rem] rounded-b-[2rem] bg-white px-[6.4rem] pb-[6.4rem] pt-[3.2rem]">
+      <form
+        class="mb-[5rem] flex w-[100%] max-w-[75rem] flex-col gap-[3.2rem] rounded-b-[2rem] bg-white px-[6.4rem] pb-[6.4rem] pt-[3.2rem]"
+      >
         <fieldset class="flex flex-col gap-[1.6rem]">
           <legend class="hidden">Informações Pessoais</legend>
 
-          <div id="name-wrapper" class="flex gap-[2.2rem]">
+          <div id="name-wrapper" class="flex gap-[2.2rem] max-[500px]:flex-col">
             <div id="fist-name-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
-              <label for="first-name" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">Nome</label>
+              <label for="first-name" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] max-[570px]:text-center"
+                >Nome</label
+              >
               <input
-                class="h-[5.5rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+                class="h-[5.5rem] w-[100%] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958] max-[570px]:text-center"
                 type="text"
                 id="first-name"
                 name="first-name"
+                required
               />
             </div>
 
             <div id="last-name-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
-              <label for="last-name" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">Sobrenome</label>
+              <label for="last-name" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] max-[570px]:text-center"
+                >Sobrenome</label
+              >
               <input
-                class="h-[5.5rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+                class="h-[5.5rem] w-[100%] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958] max-[570px]:text-center"
                 type="text"
                 id="last-name"
                 name="last-name"
+                required
               />
             </div>
           </div>
 
           <div id="email-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
-            <label for="email" class="flex gap-[0.9rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">
+            <label
+              for="email"
+              class="flex gap-[0.9rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] max-[570px]:flex-col max-[570px]:items-center max-[570px]:gap-[0rem]"
+            >
               Email<span class="font-poppins text-[1.2rem] text-[#C1BCCC]">(digite um email válido)</span>
             </label>
             <input
-              class="h-[5.5rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="h-[5.5rem] w-[100%] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958] max-[570px]:text-center"
               type="email"
               id="email"
               name="email"
+              required
             />
           </div>
         </fieldset>
@@ -83,13 +95,14 @@
           </legend>
 
           <div id="mentor-wrapper" class="mt-[3.2rem] flex w-[100%] flex-col gap-[0.8rem]">
-            <label for="mentor" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">
+            <label for="mentor" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] max-[570px]:text-center">
               Selecione quem foi o seu mentor
             </label>
             <select
-              class="h-[5.5rem] max-w-[30rem] cursor-pointer appearance-none rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] bg-[url(../src/assets/select.svg)] bg-[right_1.4rem_top_50%] bg-no-repeat px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="h-[5.5rem] w-[100%] max-w-[30rem] cursor-pointer appearance-none rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] bg-[url(../src/assets/select.svg)] bg-[right_1.4rem_top_50%] bg-no-repeat px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958] max-[570px]:max-w-[100%] max-[570px]:text-center"
               name="mentor"
               id="mentor"
+              required
             >
               <option value="" disabled selected>Mentor</option>
               <option value="mayk-brito">Mayk Brito</option>
@@ -99,66 +112,75 @@
           </div>
 
           <div id="feedback-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
-            <label for="feedback" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">
+            <label for="feedback" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] max-[570px]:text-center">
               Feedback sobre o mentor
             </label>
             <textarea
               name="feedback"
               id="feedback"
-              class="h-[16.5rem] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] p-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="h-[16.5rem] w-[100%] rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] p-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              required
             ></textarea>
           </div>
 
-          <div id="checkbox-wrapper" class="flex gap-[0.8rem]">
+          <div id="checkbox-wrapper" class="flex items-center gap-[0.8rem] max-[500px]:flex-col">
             <input
-              class="h-[2.4rem] w-[2.4rem] cursor-pointer appearance-none rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] checked:bg-[url(../src/assets/check.svg)] checked:bg-center checked:bg-no-repeat"
+              class="h-[2.4rem] w-[2.4rem] min-w-[2.4rem] cursor-pointer appearance-none rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] checked:bg-[url(../src/assets/check.svg)] checked:bg-center checked:bg-no-repeat max-[500px]:order-2"
               type="checkbox"
               id="checkbox"
               name="checkbox"
             />
-            <label for="checkbox" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">
+            <label for="checkbox" class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] max-[500px]:text-center">
               Todas as minhas dúvidas foram esclarecidas durante a mentoria.
             </label>
           </div>
         </fieldset>
 
-        <fieldset class="flex gap-[3.2rem]">
+        <fieldset class="flex gap-[3.2rem] max-[570px]:flex-col">
           <legend
             class="w-[100%] border-b-[0.1rem] border-[#E6E6F0] pb-[0.8rem] text-center font-staatliches text-[2.4rem]/[3.4rem] text-[#253B51]"
           >
             Agendando próxima mentoria
           </legend>
 
-          <div id="date-wrapper" class="w-max-[29rem] mt-[3.2rem] flex w-[100%] flex-col gap-[0.8rem]">
-            <label for="date" class="flex gap-[0.9rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]">
+          <div id="date-wrapper" class="mt-[3.2rem] flex w-[100%] flex-col gap-[0.8rem]">
+            <label
+              for="date"
+              class="flex gap-[0.9rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] max-[570px]:flex-col max-[570px]:items-center max-[570px]:gap-[0rem]"
+            >
               Data<span class="font-poppins text-[1.2rem] text-[#C1BCCC]">(DD/MM/AAAA)</span>
             </label>
             <input
-              class="h-[5.5rem] cursor-text rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+              class="h-[5.5rem] w-[100%] cursor-text rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958] max-[570px]:text-center"
               type="date"
               id="date"
               name="date"
+              required
             />
           </div>
 
-          <div id="time-wrapper" class="mt-[3.2rem] flex w-[100%] gap-[1rem]">
-            <div id="time-start-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
-              <label class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]" for=""> Das </label>
+          <div id="time-wrapper" class="mt-[3.2rem] flex w-[100%] gap-[1rem] max-[570px]:mt-[0px] max-[420px]:flex-col">
+            <div id="time-start-wrapper" class="flex w-[100%] flex-col gap-[0.8rem] max-[570px]:text-center">
+              <label class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]" for="time-start"> Das </label>
               <input
-                class="h-[5.5rem] cursor-text rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+                class="h-[5.5rem] w-[100%] cursor-text rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958] max-[570px]:text-center"
                 type="time"
                 id="time-start"
                 name="time-start"
+                required
               />
             </div>
 
             <div id="time-end-wrapper" class="flex w-[100%] flex-col gap-[0.8rem]">
-              <label class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958]" for=""> Das </label>
+              <label class="font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] max-[570px]:text-center" for="time-end">
+                Até
+              </label>
               <input
-                class="h-[5.5rem] cursor-text rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958]"
+                class="h-[5.5rem] w-[100%] cursor-text rounded-[0.8rem] border-[0.1rem] border-[#E6E6F0] bg-[#FAFAFC] px-[1.5rem] font-poppins text-[1.4rem]/[2.4rem] text-[#4E4958] outline-none focus:border-[0.2rem] focus:border-[#4E4958] max-[570px]:text-center"
                 type="time"
                 id="time-end"
                 name="time-end"
+                required
               />
             </div>
           </div>
@@ -166,12 +188,12 @@
 
         <button
           type="submit"
-          class="mt-[3.2rem] rounded-[0.8rem] bg-[#F67669] p-[1.25rem] font-staatliches text-[2rem]/[2.6rem] text-white"
+          class="mt-[3.2rem] rounded-[0.8rem] bg-[#F67669] p-[1.25rem] font-staatliches text-[2rem]/[2.6rem] text-white transition-all duration-[0.3s] ease-in-out hover:scale-[1.03]"
         >
           salvar
         </button>
       </form>
-
+      
     </main>
   </body>
 </html>
